@@ -35,7 +35,7 @@ a {
 }
 
 ul {
-    list-style: none;
+    /* list-style: none; */
     padding: 1;
     padding-left: 10px;
 }
