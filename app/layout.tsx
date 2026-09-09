@@ -7,7 +7,7 @@ import { Theme } from "./components/Ui";
 export const metadata: Metadata = {
   metadataBase: new URL("https://kk2a.github.io/portfolio/"),
   title: "kk2a | Portfolio",
-  description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
+  description: "kk2a's portfolio",
   icons: {
     icon: "/favicon.png",
   },
@@ -15,20 +15,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     title: "kk2a | Portfolio",
-    description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
+    description: "kk2a's portfolio",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 1200,
-        alt: "kk2aのポートフォリオ",
+        alt: "kk2a's portfolio",
       },
     ],
   },
   twitter: {
     card: "summary",
     title: "kk2a | Portfolio",
-    description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
+    description: "kk2a's portfolio",
     images: ["/og-image.jpg"],
   },
 };
