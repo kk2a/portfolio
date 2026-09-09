@@ -31,8 +31,12 @@ a {
 }
 
 a:hover {
-  color: #cffafe;
+  color: #fcd34d;
   text-decoration: none;
+}
+
+a[href^="http"]:hover {
+  color: #fcd34d;
 }
 
 p {
@@ -226,7 +230,7 @@ p {
 }
 
 .rail-links a:hover {
-  color: var(--muted-ink);
+  color: #fcd34d;
   text-decoration: none;
 }
 
