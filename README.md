@@ -9,6 +9,8 @@ pnpm install
 pnpm dev
 ```
 
+`pnpm dev` はNext.js標準の開発サーバーを起動します。WSL環境での画面開発はこちらを使用してください。Cloudflare Workersランタイム上で確認する場合は `pnpm dev:workers`、ビルド済みWorkersを確認する場合は `pnpm build && pnpm start` を使用します。
+
 品質チェックと本番ビルドは次のコマンドで実行できます。
 
 ```bash
@@ -16,8 +18,6 @@ pnpm typecheck
 pnpm lint
 pnpm build
 ```
-
-`pnpm dev` はWorkersランタイム上でvinextの開発サーバーを起動します。Next.js標準の開発サーバーを使う場合は `pnpm dev:next` を実行します。
 
 ## Cloudflare Workers へのデプロイ
 
