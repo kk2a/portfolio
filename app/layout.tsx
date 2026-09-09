@@ -5,7 +5,7 @@ import "./globals.css";
 import { Theme } from "./components/Ui";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kk2a.github.io/portfolio/"),
+  metadataBase: new URL("https://kk2a.net"),
   title: "kk2a | Portfolio",
   description: "kk2a's portfolio",
   icons: {
