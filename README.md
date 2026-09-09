@@ -1,6 +1,6 @@
 # portfolio
 
-Next.js + TypeScript で構築したポートフォリオです。静的エクスポートに対応しており、Cloudflare Pages へデプロイできます。
+Next.js + TypeScript で構築したポートフォリオです。vinextを用いてCloudflare Workersへデプロイできます。
 
 ## 開発
 
@@ -17,13 +17,14 @@ pnpm lint
 pnpm build
 ```
 
-## Cloudflare Pages へのデプロイ
+`pnpm dev` はWorkersランタイム上でvinextの開発サーバーを起動します。Next.js標準の開発サーバーを使う場合は `pnpm dev:next` を実行します。
 
-初回のみCloudflareへログインし、Pagesプロジェクトを作成します。
+## Cloudflare Workers へのデプロイ
+
+初回のみCloudflareへログインします。
 
 ```bash
 pnpm exec wrangler login
-pnpm exec wrangler pages project create portfolio --production-branch main
 ```
 
 以降は次のコマンドでビルドとデプロイを実行できます。
@@ -32,6 +33,6 @@ pnpm exec wrangler pages project create portfolio --production-branch main
 pnpm deploy
 ```
 
-`pnpm deploy` は `out/` に生成された静的ファイルを、Cloudflare Pages プロジェクト `portfolio` にデプロイします。
+`pnpm deploy` はvinextでWorkers用のビルドを行い、Worker `portfolio` にデプロイします。
 
 [![kk2a](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fkk2a)](https://atcoder.jp/users/kk2a)
