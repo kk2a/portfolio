@@ -152,7 +152,7 @@ export default function Home() {
                   <div className="timeline-item">
                     <Text size="1" color="cyan" className="timeline-date">ORIGIN</Text>
                     <Heading as="h3" size="4">大阪</Heading>
-                    <Text as="p" size="2" color="gray">数学とものづくりに興味を持って育ちました．</Text>
+                    <Text as="p" size="2" color="gray">算数が好きでした．</Text>
                   </div>
                   <div className="timeline-item">
                     <Text size="1" color="cyan" className="timeline-date">2021/04/01</Text>
@@ -218,8 +218,8 @@ export default function Home() {
 
                   <div className="skill-group">
                     <Flex align="center" gap="3" className="skill-group-heading">
-                      <Badge color="cyan" variant="soft">PRIMARY</Badge>
-                      <Heading as="h3" size="4">主要項目</Heading>
+                      <Badge color="cyan" variant="soft">CORE</Badge>
+                      <Heading as="h3" size="4">中核スキル</Heading>
                     </Flex>
                     <div className="skill-grid">
                       <SkillCard
@@ -251,8 +251,8 @@ export default function Home() {
 
                   <div className="skill-group">
                     <Flex align="center" gap="3" className="skill-group-heading">
-                      <Badge color="gray" variant="soft">SUPPORT</Badge>
-                      <Heading as="h3" size="4">補助項目</Heading>
+                      <Badge color="gray" variant="soft">FOUNDATION</Badge>
+                      <Heading as="h3" size="4">開発基盤</Heading>
                     </Flex>
                     <div className="skill-grid skill-grid--support">
                       <SkillCard
