@@ -174,9 +174,8 @@ p {
 .profile-card,
 .section {
   border: 1px solid var(--line);
-  background: var(--panel);
+  background: #0f172a;
   box-shadow: 0 24px 80px rgb(0 0 0 / 18%);
-  backdrop-filter: blur(18px);
 }
 
 .profile-card {
