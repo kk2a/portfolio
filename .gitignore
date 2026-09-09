@@ -7,4 +7,3 @@ next-env.d.ts
 .wrangler/
 .dev.vars
 /dist/
-.vinext/

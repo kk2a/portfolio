@@ -1,6 +1,6 @@
 # portfolio
 
-Next.js + TypeScript で構築したポートフォリオです。vinextを用いてCloudflare Workersへデプロイできます。
+Next.js + TypeScript で構築したポートフォリオです。Next.jsの静的エクスポートをCloudflare Workers Static Assetsへデプロイできます。
 
 ## 開発
 
@@ -9,7 +9,7 @@ pnpm install
 pnpm dev
 ```
 
-`pnpm dev` はNext.js標準の開発サーバーを起動します。WSL環境での画面開発はこちらを使用してください。Cloudflare Workersランタイム上で確認する場合は `pnpm dev:workers`、ビルド済みWorkersを確認する場合は `pnpm build && pnpm start` を使用します。
+`pnpm dev` はNext.js標準の開発サーバーを起動します。ビルド済みWorkersを確認する場合は `pnpm build && pnpm start` を使用します。
 
 品質チェックと本番ビルドは次のコマンドで実行できます。
 
@@ -33,7 +33,7 @@ pnpm exec wrangler login
 pnpm deploy
 ```
 
-`pnpm deploy` はvinextでWorkers用のビルドを行い、Worker `portfolio` にデプロイします。Workers Buildsからは、ビルド済み成果物をデプロイする `pnpm deploy:built` を使用します。
+`pnpm deploy` はNext.jsで静的サイトをビルドし、Worker `portfolio` にデプロイします。Workers Buildsからは、ビルド済み成果物をデプロイする `pnpm deploy:built` を使用します。
 
 ## CI/CD
 
