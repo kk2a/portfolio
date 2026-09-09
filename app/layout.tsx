@@ -20,13 +20,13 @@ export const metadata: Metadata = {
       {
         url: "/og-image.jpg",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "kk2aのポートフォリオ",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "kk2a | Portfolio",
     description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
     images: ["/og-image.jpg"],
