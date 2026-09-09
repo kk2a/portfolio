@@ -5,10 +5,31 @@ import "./globals.css";
 import { Theme } from "./components/Ui";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kk2a.github.io/portfolio/"),
   title: "kk2a | Portfolio",
   description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
   icons: {
     icon: "/assets/IMG_4353.jpg",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    title: "kk2a | Portfolio",
+    description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "kk2aのポートフォリオ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "kk2a | Portfolio",
+    description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
+    images: ["/og-image.jpg"],
   },
 };
 

@@ -9,50 +9,50 @@ importers:
   .:
     dependencies:
       '@radix-ui/themes':
-        specifier: ^3.3.0
+        specifier: 3.3.0
         version: 3.3.0(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       katex:
-        specifier: latest
+        specifier: 0.18.7
         version: 0.18.7
       next:
-        specifier: latest
+        specifier: 16.3.4
         version: 16.3.4(@babel/core@7.29.7)(@types/node@26.5.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react:
-        specifier: latest
+        specifier: 19.2.8
         version: 19.2.8
       react-dom:
-        specifier: latest
+        specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
     devDependencies:
       '@types/katex':
-        specifier: latest
+        specifier: 0.16.8
         version: 0.16.8
       '@types/node':
-        specifier: latest
+        specifier: 26.5.0
         version: 26.5.0
       '@types/react':
-        specifier: latest
+        specifier: 19.2.18
         version: 19.2.18
       '@types/react-dom':
-        specifier: latest
+        specifier: 19.2.7
         version: 19.2.7(@types/react@19.2.18)
       '@typescript-eslint/eslint-plugin':
-        specifier: latest
+        specifier: 8.70.0
         version: 8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5)(typescript@5.9.3))(eslint@9.39.5)(typescript@5.9.3)
       '@typescript-eslint/parser':
-        specifier: latest
+        specifier: 8.70.0
         version: 8.70.0(eslint@9.39.5)(typescript@5.9.3)
       eslint:
-        specifier: ^9.39.5
+        specifier: 9.39.5
         version: 9.39.5
       eslint-config-next:
-        specifier: latest
+        specifier: 16.3.4
         version: 16.3.4(@typescript-eslint/parser@8.70.0(eslint@9.39.5)(typescript@5.9.3))(eslint@9.39.5)(typescript@5.9.3)
       typescript:
-        specifier: ^5.9.3
+        specifier: 5.9.3
         version: 5.9.3
       wrangler:
-        specifier: latest
+        specifier: 4.129.1
         version: 4.129.1
 
 packages:
