@@ -262,12 +262,12 @@ export default function Home() {
                       />
                       <SkillCard
                         title="Docker / Docker Compose"
-                        summary="開発環境や複数サービスを再現可能なコンテナとして管理します．"
+                        summary="開発環境の構築や複数サービスの管理に使用しています．"
                         tags={["Development Environment", "Container"]}
                       />
                       <SkillCard
                         title="Codex / Claude Code"
-                        summary="AIを実装・レビューの相棒として活用し，設計から検証まで進めます．"
+                        summary="実務および趣味の個人開発で日常的に利用し，実装，調査，レビュー，検証などに活用しています．"
                         tags={["AI-driven Development", "Implementation", "Review"]}
                       />
                     </div>
