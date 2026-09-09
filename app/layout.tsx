@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "kk2a | Portfolio",
   description: "大阪公立大学工業高等専門学校に通う kk2a のポートフォリオ",
   icons: {
-    icon: "/assets/IMG_4353.jpg",
+    icon: "/favicon.png",
   },
   openGraph: {
     type: "website",
