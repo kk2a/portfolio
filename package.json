@@ -14,23 +14,23 @@
     "deploy:built": "wrangler deploy --config wrangler.jsonc"
   },
   "dependencies": {
-    "@radix-ui/themes": "^3.3.0",
-    "katex": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "@radix-ui/themes": "3.3.0",
+    "katex": "0.18.7",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@types/katex": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "eslint": "^9.39.5",
-    "eslint-config-next": "latest",
-    "typescript": "^5.9.3",
-    "wrangler": "latest"
+    "@types/katex": "0.16.8",
+    "@types/node": "26.5.0",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@typescript-eslint/eslint-plugin": "8.70.0",
+    "@typescript-eslint/parser": "8.70.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.4",
+    "typescript": "5.9.3",
+    "wrangler": "4.129.1"
   },
   "type": "module"
 }

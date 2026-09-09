@@ -5,7 +5,7 @@ const eslintConfig = [
   ...coreWebVitals,
   ...typescript,
   {
-    ignores: ["dist/**", ".vinext/**"],
+    ignores: ["dist/**", "out/**"],
   },
 ];
 

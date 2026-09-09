@@ -6,4 +6,5 @@ next-env.d.ts
 *.tsbuildinfo
 .wrangler/
 .dev.vars
+public/assets/*.HEIC
 /dist/
