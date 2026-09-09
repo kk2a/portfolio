@@ -200,12 +200,11 @@ p {
   border-radius: 0.45rem;
   color: var(--muted-ink);
   font-size: 0.82rem;
-  transition: color 160ms ease;
 }
 
 .rail-nav a:hover {
-  color: var(--ink);
-  text-decoration: underline;
+  color: var(--muted-ink);
+  text-decoration: none;
 }
 
 .rail-nav span {
@@ -228,7 +227,8 @@ p {
 }
 
 .rail-links a:hover {
-  color: var(--cyan);
+  color: var(--muted-ink);
+  text-decoration: none;
 }
 
 .content-column {
