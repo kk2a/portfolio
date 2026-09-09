@@ -372,7 +372,8 @@ export default function Home() {
                     <p>
                       C++のコンパイル・実行を補助する<a href="https://github.com/kk2a/cpp-run">cpp-run</a>，
                       ソースコードをまとめる<a href="https://github.com/kk2a/cpp-bundle">cpp-bundle</a>，
-                      データ構造を実装する<a href="https://github.com/kk2a/b-tree">b-tree</a>などを作っています．
+                      データ構造を実装する<a href="https://github.com/kk2a/b-tree">b-tree</a>や
+                      画像・PDF処理ツール<a href="https://github.com/kk2a/img2pdf">image-pdf-tools</a>などを作っています．
                     </p>
                     <Flex gap="2" wrap="wrap">
                       <Badge color="orange" variant="soft">Rust</Badge>
