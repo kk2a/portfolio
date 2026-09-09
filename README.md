@@ -35,4 +35,13 @@ pnpm deploy
 
 `pnpm deploy` はvinextでWorkers用のビルドを行い、Worker `portfolio` にデプロイします。
 
+## CI/CD
+
+`main` ブランチにPRがマージされると、GitHub Actionsが型チェック・Lint・Workers用ビルドを実行し、成功した場合のみCloudflare Workersへデプロイします。
+
+GitHubリポジトリの `production` Environmentに、次のSecretsを登録してください。
+
+- `CLOUDFLARE_API_TOKEN`：Workersを編集できるAPI Token
+- `CLOUDFLARE_ACCOUNT_ID`：Cloudflare Account ID
+
 [![kk2a](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fkk2a)](https://atcoder.jp/users/kk2a)
