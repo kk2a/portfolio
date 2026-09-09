@@ -1,4 +1,15 @@
 import Image from "next/image";
+import {
+  Badge,
+  Box,
+  Button,
+  Card,
+  Container,
+  Flex,
+  Heading,
+  Separator,
+  Text,
+} from "./components/Ui";
 import { MathFormula } from "./components/MathFormula";
 
 const atcoderBadge =
@@ -9,15 +20,34 @@ function ImageGallery({ children }: { children: React.ReactNode }) {
 }
 
 function Section({
+  id,
+  index,
   title,
+  description,
   children,
 }: {
+  id: string;
+  index: string;
   title: string;
+  description: string;
   children: React.ReactNode;
 }) {
   return (
-    <section className="section">
-      <h2>{title}</h2>
+    <section id={id} className="section">
+      <Flex align="start" gap="4" className="section-heading">
+        <Text className="section-index" size="2" weight="bold">
+          {index}
+        </Text>
+        <Box>
+          <Heading as="h2" size="6">
+            {title}
+          </Heading>
+          <Text as="p" size="2" color="gray" className="section-description">
+            {description}
+          </Text>
+        </Box>
+      </Flex>
+      <Separator size="4" my="5" />
       {children}
     </section>
   );
@@ -27,15 +57,72 @@ export default function Home() {
   return (
     <>
       <header className="site-header">
-        <div className="content-width header-content">
-          <p className="eyebrow">PORTFOLIO</p>
-          <h1>こんにちは</h1>
-          <p className="header-subtitle">kk2a のポートフォリオ</p>
-        </div>
+        <Container size="4" className="hero-content">
+          <Flex direction="column" gap="5" className="header-content">
+            <Badge color="cyan" variant="soft" size="2" className="hero-badge">
+              PORTFOLIO / 2025—2026
+            </Badge>
+            <Box>
+              <Heading as="h1" size="9" className="hero-title">
+                こんにちは
+              </Heading>
+              <Text as="p" size="5" color="gray" className="header-subtitle">
+                kk2a のポートフォリオ
+              </Text>
+            </Box>
+            <Text as="p" size="3" color="gray" className="hero-intro">
+              数学とプログラミングを楽しみながら、考えたことを形にしています。
+            </Text>
+            <Flex gap="3" wrap="wrap">
+              <Button asChild size="3">
+                <a href="https://github.com/kk2a">GitHubを見る ↗</a>
+              </Button>
+              <Button asChild size="3" variant="soft" color="gray">
+                <a href="#about">プロフィールを読む ↓</a>
+              </Button>
+            </Flex>
+          </Flex>
+          <Box className="hero-orbit" aria-hidden="true">
+            <span>∑</span>
+            <span>F₂</span>
+            <span>&lt;/&gt;</span>
+          </Box>
+        </Container>
       </header>
 
-      <main className="content-width">
-        <Section title="自己紹介">
+      <main>
+        <Container size="4" className="page-shell">
+          <div className="portfolio-grid">
+            <aside className="profile-rail">
+              <Card className="profile-card">
+                <Text size="1" weight="bold" color="cyan" className="rail-label">
+                  INDEX
+                </Text>
+                <Heading as="h2" size="6" mt="2">
+                  kk2a
+                </Heading>
+                <Text as="p" size="2" color="gray" mt="2">
+                  大阪公立大学高専 / 数学・競技プログラミング
+                </Text>
+                <Separator size="4" my="5" />
+                <nav aria-label="ページ内ナビゲーション" className="rail-nav">
+                  <a href="#about"><span>01</span> 自己紹介</a>
+                  <a href="#activities"><span>02</span> やっていること</a>
+                  <a href="#experience"><span>03</span> 経験</a>
+                  <a href="#projects"><span>04</span> プロダクト</a>
+                  <a href="#links"><span>05</span> リンク</a>
+                </nav>
+                <Separator size="4" my="5" />
+                <Flex gap="2" wrap="wrap">
+                  <Badge color="cyan" variant="outline">数学</Badge>
+                  <Badge color="violet" variant="outline">C++</Badge>
+                  <Badge color="amber" variant="outline">TypeScript</Badge>
+                </Flex>
+              </Card>
+            </aside>
+
+            <div className="content-column">
+        <Section id="about" index="01" title="自己紹介" description="興味のあること、今取り組んでいること">
           <p>大阪公立大学高専に通っている四年生です．</p>
           <p>数学が好きです．今は，代数学Ⅲ (桂) を読んでいます．</p>
           <p>競プロも好きです．</p>
@@ -64,7 +151,7 @@ export default function Home() {
           </ImageGallery>
         </Section>
 
-        <Section title="やっていること">
+        <Section id="activities" index="02" title="やっていること" description="手を動かして試している技術">
           <ul>
             <li>
               <h3>数学</h3>
@@ -154,7 +241,7 @@ export default function Home() {
           </ul>
         </Section>
 
-        <Section title="経験">
+        <Section id="experience" index="03" title="経験" description="大会・セミナーでの活動記録">
           <div className="experience-list">
             <article>
               <h3>パソコン甲子園2022プログラミング部門</h3>
@@ -210,7 +297,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section title="プロダクト">
+        <Section id="projects" index="04" title="プロダクト" description="興味から始めて、実際に作ったもの">
           <ol className="project-list">
             <li>
               <h3>
@@ -351,7 +438,7 @@ export default function Home() {
           </ol>
         </Section>
 
-        <Section title="リンク">
+        <Section id="links" index="05" title="リンク" description="活動中のアカウント">
           <ul>
             <li>
               <a href="https://github.com/kk2a">GitHub</a>
@@ -364,6 +451,9 @@ export default function Home() {
             </li>
           </ul>
         </Section>
+            </div>
+          </div>
+        </Container>
       </main>
 
       <footer className="site-footer">© kk2a</footer>
