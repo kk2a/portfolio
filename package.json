@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.8.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "wrangler pages dev out",
+    "preview": "wrangler pages dev out",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "deploy": "pnpm run build && wrangler pages deploy out --project-name portfolio"
+  },
+  "dependencies": {
+    "katex": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/katex": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "latest",
+    "typescript": "^5.9.3",
+    "wrangler": "latest"
+  }
+}
