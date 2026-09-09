@@ -12,7 +12,8 @@
     "preview": "wrangler dev --config dist/server/wrangler.json",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "deploy": "vinext-cloudflare deploy --config dist/server/wrangler.json"
+    "deploy": "pnpm build && pnpm deploy:built",
+    "deploy:built": "wrangler deploy --config dist/server/wrangler.json"
   },
   "dependencies": {
     "@vinext/cloudflare": "1.0.0-beta.7",
