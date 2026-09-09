@@ -344,6 +344,81 @@ p {
   overflow-x: auto;
 }
 
+.math-focus-card,
+.evidence-card,
+.skill-card {
+  border: 1px solid var(--line);
+  background: rgb(2 6 23 / 24%);
+}
+
+.math-focus-card,
+.evidence-card {
+  padding: 1.25rem;
+}
+
+.card-kicker {
+  width: fit-content;
+  letter-spacing: 0.12em;
+}
+
+.math-focus-card h3,
+.skill-card h3 {
+  margin: 0;
+}
+
+.math-focus-card p {
+  margin-bottom: 0;
+}
+
+.skill-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-group-heading {
+  min-height: 1.75rem;
+}
+
+.skill-group-heading h3 {
+  margin: 0;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.skill-grid--support {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 10.5rem;
+  padding: 1.1rem;
+}
+
+.skill-summary {
+  flex: 1;
+  margin: 0.55rem 0 1rem;
+}
+
+.skill-tags {
+  align-items: flex-end;
+}
+
+.evidence-card .image-gallery {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.evidence-card .achievement-image {
+  max-height: 15rem;
+}
+
 .experience-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -356,6 +431,25 @@ p {
   border: 1px solid var(--line);
   border-radius: 0.65rem;
   background: rgb(2 6 23 / 24%);
+}
+
+.experience-card--highlight {
+  border-color: rgb(103 232 249 / 28%);
+  background: linear-gradient(145deg, rgb(8 47 73 / 28%), rgb(2 6 23 / 24%));
+}
+
+.experience-card h3 {
+  margin-top: 0.75rem;
+}
+
+.experience-image {
+  display: block;
+  width: 100%;
+  max-height: 15rem;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .experience-list > article h3 {
@@ -469,6 +563,10 @@ p {
   .rail-nav span {
     display: block;
   }
+
+  .skill-grid--support {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 600px) {
@@ -510,6 +608,11 @@ p {
   }
 
   .experience-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-grid,
+  .skill-grid--support {
     grid-template-columns: 1fr;
   }
 
