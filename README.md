@@ -5,6 +5,8 @@ Next.js + TypeScript で構築したポートフォリオです．Next.jsの静�
 ## 開発
 
 ```bash
+nvm install
+nvm use
 pnpm install
 pnpm dev
 ```
